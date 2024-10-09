@@ -1,0 +1,6 @@
+@RLInformaticaAPI_HostAddress = http://localhost:5008
+
+GET {{RLInformaticaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,625 @@
+[
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.CuentasController",
+    "Method": "EditarUsuario",
+    "RelativePath": "api/cuentas/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "modelo",
+        "Type": "RLInformaticaAPI.DTOS.EditarUsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "editarUsuario"
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.CuentasController",
+    "Method": "HacerAdmin",
+    "RelativePath": "api/cuentas/HacerAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "editarAdminDTO",
+        "Type": "RLInformaticaAPI.DTOS.EditarAdminDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.CuentasController",
+    "Method": "Login",
+    "RelativePath": "api/cuentas/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credencialesUsuario",
+        "Type": "RLInformaticaAPI.DTOS.CredencialesUsuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RLInformaticaAPI.DTOS.RespuestaAutenticacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.CuentasController",
+    "Method": "Registrar",
+    "RelativePath": "api/cuentas/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credencialesUsuario",
+        "Type": "RLInformaticaAPI.DTOS.CredencialesUsuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RLInformaticaAPI.DTOS.RespuestaAutenticacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.CuentasController",
+    "Method": "RemoverAdmin",
+    "RelativePath": "api/cuentas/RemoverAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "editarAdminDTO",
+        "Type": "RLInformaticaAPI.DTOS.EditarAdminDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.CuentasController",
+    "Method": "Renovar",
+    "RelativePath": "api/cuentas/RenovarToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "RLInformaticaAPI.DTOS.RespuestaAutenticacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.CuentasController",
+    "Method": "TraerUsuarios",
+    "RelativePath": "api/cuentas/TraerUsuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RLInformaticaAPI.DTOS.UsuarioDTO, RLInformaticaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.CuentasController",
+    "Method": "ValidarToken",
+    "RelativePath": "api/cuentas/validarToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.DispositivoController",
+    "Method": "Get",
+    "RelativePath": "api/dispositivo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RLInformaticaAPI.DTOS.DispositivoDTO, RLInformaticaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.DispositivoController",
+    "Method": "Post",
+    "RelativePath": "api/dispositivo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dispositivoCreacionDTO",
+        "Type": "RLInformaticaAPI.DTOS.DispositivoCreacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.DispositivoController",
+    "Method": "Get",
+    "RelativePath": "api/dispositivo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RLInformaticaAPI.DTOS.DispositivoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "obtenerDispositivo"
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.DispositivoController",
+    "Method": "Put",
+    "RelativePath": "api/dispositivo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dispositivoCreacionDTO",
+        "Type": "RLInformaticaAPI.DTOS.DispositivoCreacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.DispositivoController",
+    "Method": "Delete",
+    "RelativePath": "api/dispositivo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.MarcaController",
+    "Method": "Get",
+    "RelativePath": "api/marca",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RLInformaticaAPI.DTOS.MarcaDTO, RLInformaticaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.MarcaController",
+    "Method": "Post",
+    "RelativePath": "api/marca",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "marcaCreacionDTO",
+        "Type": "RLInformaticaAPI.DTOS.MarcaCreacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.MarcaController",
+    "Method": "Get",
+    "RelativePath": "api/marca/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RLInformaticaAPI.DTOS.MarcaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "obtenerMarca"
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.MarcaController",
+    "Method": "Put",
+    "RelativePath": "api/marca/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "marcaCreacionDTO",
+        "Type": "RLInformaticaAPI.DTOS.MarcaCreacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.MarcaController",
+    "Method": "Delete",
+    "RelativePath": "api/marca/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.ReparacionController",
+    "Method": "Get",
+    "RelativePath": "api/reparacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Pagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadRegistrosPorPagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RLInformaticaAPI.DTOS.ReparacionDTO, RLInformaticaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.ReparacionController",
+    "Method": "Post",
+    "RelativePath": "api/reparacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reparacionCreacionDTO",
+        "Type": "RLInformaticaAPI.DTOS.ReparacionCreacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.ReparacionController",
+    "Method": "Get",
+    "RelativePath": "api/reparacion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RLInformaticaAPI.DTOS.ReparacionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "obtenerReparacion"
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.ReparacionController",
+    "Method": "Put",
+    "RelativePath": "api/reparacion/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reparacionCreacionDTO",
+        "Type": "RLInformaticaAPI.DTOS.ReparacionCreacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.ReparacionController",
+    "Method": "Patch",
+    "RelativePath": "api/reparacion/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patchDocument",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.ReparacionController",
+    "Method": "Delete",
+    "RelativePath": "api/reparacion/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.ReparacionController",
+    "Method": "Get",
+    "RelativePath": "api/reparacion/{terminada}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "terminada",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "Pagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadRegistrosPorPagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RLInformaticaAPI.DTOS.ReparacionDTO, RLInformaticaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.ReparacionController",
+    "Method": "MisReparaciones",
+    "RelativePath": "api/reparacion/MisReparaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Pagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadRegistrosPorPagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RLInformaticaAPI.DTOS.ReparacionDTO, RLInformaticaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.ResumenController",
+    "Method": "GananciaGeneral",
+    "RelativePath": "api/resumen/gananciaGeneral",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "a\u00F1o",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RLInformaticaAPI.DTOS.ResumenGeneralDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RLInformaticaAPI.Controllers.ResumenController",
+    "Method": "GananciaIndividual",
+    "RelativePath": "api/resumen/gananciaIndividual",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "a\u00F1o",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RLInformaticaAPI.DTOS.ResumenGeneralDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
